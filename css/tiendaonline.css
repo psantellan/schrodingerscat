@@ -1,0 +1,192 @@
+body{
+	background-color: tomato;
+	font-family: Helvetica;
+}
+
+.logo{
+	margin: auto;
+}
+
+#ofertas-del-dia {
+	background-color: #908B8B;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.ofertas-contanier {
+	display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.old-price{
+	color: #FF0000;
+	text-decoration: line-through;
+}
+
+#admin{
+	height: 600px;
+	width: 100%;
+	background-color: powderblue;
+	display: none;
+}
+
+
+#mainmenu ul{
+	display: flex;
+	list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #333;
+}
+
+#mainmenu li{
+	flex-grow:1;
+    text-align:center;
+}
+
+#mainmenu li a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: .5em 1em;
+}
+
+#mainmenu li a:hover {
+    background: tomato;
+    color: white;
+}
+
+#tabla-libros table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.cart_add{
+	background-image: url(../Thumbnails/cart_add.png);
+    width: 180px;
+    height: 35px;
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    color: #FFF;
+    text-align: center;
+    text-shadow: -1px -1px #A43E0D;
+    float: right;
+    line-height: 35px;
+    background-position: top;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+    padding-bottom: 3px;
+    cursor: default;
+    margin-right: 10px;
+    margin-bottom: 25px;
+    background-color: transparent;
+}
+
+.cart_add:hover{
+	cursor: pointer;
+}
+
+/*CONTENEDOR PRINCIPAL*/
+#main-content{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 10px;
+	width: 100%;
+}
+/**********************/
+
+
+/*CONTENEDORES DE LOS LIBROS INDIVIDUALES*/
+.book-container{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	background: #eb9567;
+	width: 200px;
+	height: 280px;
+	margin-left: 25px;
+	padding-top: 15px;
+}
+
+.nfcc-container, .gui-container, .te-container, .poe-container, .rel-container, .nov-container{
+	background-color: black;
+	border-radius: 3px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	border: 10px;
+	padding: 10px;
+	width: 98.5%;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+}
+
+.nfcc-container, .gui-container, .te-container, .poe-container, .rel-container ul li{
+	list-style-image: none;
+}
+
+#footer-container{
+	display: block;
+	width: 100%;
+    min-width: 990px;
+    overflow: hidden;
+    padding-top: 1px;
+    background-color: #333;
+    background-repeat: repeat-x;
+    background-position: top;
+}
+
+.footer-texto{
+	color: white;
+}
+
+
+
+
+
+/*CARRITO*/
+
+#carrito{
+	display: none;
+	height: auto;
+	width: 100%;
+	background: white;
+	padding-top: 50px;
+}
+
+
+th{
+	margin-right: 25px;
+}
+
+
+/*-----------*/
+
+
+
+
+
+
+
+

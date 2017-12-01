@@ -1,0 +1,12 @@
+{
+  "name": "server-ceibal",
+  "version": "0.0.1",
+  "description": "Servidor",
+  "dependencies": {
+    "connect": "^3.6.3",
+    "serve-static": "^1.12.4"
+  },
+  "devDependencies": {},
+  "scripts": {},
+  "engines": {}
+}

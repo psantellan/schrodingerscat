@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<head>
+	<title>El gato de Schrödinger</title>
+	<link rel="stylesheet" type="text/css" href="css/tiendaonline.css">
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<header>
+		<h1>
+			<a href="index.html">
+				<img src="Imágenes varias/logo.jpg" alt="El Gato de Schrödinger" border="0" title="El Gato de Schrödinger">
+			</a>
+		</h1>
+			     
+    </header>
+	<nav id="mainmenu">
+		<ul>
+			<li><a href="Html/novelas.html">Novelas</a></li>
+		    <li><a href="Html/noficcion.html">No ficción</a></li>
+		    <li><a href="Html/teatro.html">Teatro</a></li>
+		    <li><a href="Html/guiones.html">Guiones</a></li>
+		    <li><a href="Html/relatos.html">Recopilaciones de relatos</a></li>
+		    <li><a href="Html/poesia.html">Poesía</a></li>
+		    <li><a href="#" id="administrador">Administrador</a></li>
+		    <li><a href="#" id="shoppingcart"><img src="Thumbnails/cart_icon.png" alt="Carrito de compras" width="14" height="14"></a></li>
+		</ul>
+	</nav>
+
+
+	
+
+
+	<!--CONTENIDO PRINCIPAL-->
+	<div id="admin">
+		<div class="formulario-guardar">
+			<form>
+				<label>Titulo: </label>
+				<input class="input" type="text" name="titulo" id="titulo"> <br>
+				<label>Autor: </label>
+				<input class="input" type="text" name="autor" id="autor"> <br>
+				<label>Precio: </label>
+				<input class="input" type="number" name="precio" id="precio"> <br> <br>
+			</form>
+			<button id="boton-guardar" onclick="guardarNuevoLibro()">Guardar</button>
+			<button id="boton-salir">Salir</button>
+		</div>
+	</div>
+
+
+	
+
+	 	<div class="item" id="ofertas-del-dia">
+		<h2>OFERTAS DEL DÍA</h2>	
+		<ul class="ofertas-contanier">
+			<li>
+				<div>
+		           <div class="imagen">
+			       		<img src="Imágenes varias/Novelas/elcantodelcuco.jpg" width="100px" height="155px">
+			       </div>
+			       <div class="descripcion-imagen">
+			       	 <span class="titulo">El canto del cuco</span><br>
+			       	 <span class="autor">Robert Galbraith</span><br>
+			       	 <span class="info">
+			       	 	<span class="old-price">$400</span>
+			       	 	<span class="current-price">$300</span>
+			       	 </span>       	 
+			       </div>
+			       <input class="cart_add" type="button" name="my-add-button" value="Agregar al carrito" class="button tip">
+			    </div>
+			 </li>	
+			 <li>
+				<div>
+		           <div class="imagen">
+			       		<img src="Imágenes varias/Poesía/Romancero-gitano.jpg" width="100px" height="155px">
+			       </div>
+			       <div class="descripcion-imagen">
+			       	 <span class="titulo">Romancero gitano</span><br>
+			       	 <span class="autor">Federico García Lorca</span><br>
+			       	 <span class="info">
+			       	 	<span class="old-price">$230</span>
+			       	 	<span class="current-price">$180</span>
+			       	 	</span>
+			       </div> 				       	 
+			       		<input class="cart_add" type="button" name="my-add-button" value="Agregar al carrito" class="button tip">		       	   
+			    </div>
+			 </li>		
+		</ul>
+		</div>
+
+		
+
+	
+	<div id="carrito">
+			<table id="tabla-libros">
+					<thead id="">
+						<th>Titulo</th>
+						<th>Autor</th>
+						<th>Precio</th>
+					</thead>
+					<tbody id="">
+					</tbody>
+				</table>
+	</div>
+
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/carrito.js"></script>
+</body>
+
+
+<footer id="footer-container">
+	<span class="redes">
+		<p class="footer-texto">¡Síguenos en nuestras redes sociales! <img src="Thumbnails/Twitter-Icon.png" alt="El Gato de Schrödinger en Twitter" width="30" height="30"> <img src="Thumbnails/Facebook_logo_(square).png" alt="El Gato de Schrödinger en Facebook" width="30" height="30"></p>
+	</span>
+	<span>
+		<p class="footer-texto">¿Tienes alguna sugerencia? ¿No encuentras el libro que quieres, y quieres que lo consigamos para ti? ¡No se diga más! Envíanos un e-mail <img src="Thumbnails/2516acb0a87d40d4bcd91d8abcc1cf24.png" alt="Envíanos un e-mail" width="30" height="30"><p>
+	    
+	</span>
+	<span>
+		<p class="footer-texto">Sitio desarrollado por Paula Santellán - 2017</p>
+	</span>	
+</footer>
+</html>
